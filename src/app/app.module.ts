@@ -11,6 +11,7 @@ import { TravelPageComponent } from './travel-page/travel-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { TourDetailsComponent } from './tour-details/tour-details.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     FooterComponent,
     TourDetailsComponent,
     AboutUsComponent,
+    BlogDetailsComponent,
   ],
   imports: [
     BrowserModule,

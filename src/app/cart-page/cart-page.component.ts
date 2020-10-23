@@ -10,6 +10,7 @@ import { CartService } from '../cart.service';
 export class CartPageComponent implements OnInit {
   items;
   sum; 
+  paySum;
 
 
   constructor(private cartService: CartService) { 
@@ -17,13 +18,31 @@ export class CartPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.items);
-    var sum = 0;
-    this.items.forEach(function(tour){sum = sum+tour.price});
-    document.getElementById("total").innerHTML = "Total: "+ sum + "€";
     
     
   }  
   ngDoCheck(){
+    console.log(this.items);
+    var sum = 0;
+    this.items.forEach(function(tour){sum = sum+tour.price});
+    var paySum=0;
+    if (sum<200){
+      var paySum=sum;
+      document.getElementById("total").innerHTML = "Total: "+ paySum + "€";
+
+    }
+    else if(sum<=499)
+    {var paySum= sum*0.9;
+      document.getElementById("total").innerHTML = "Total: "+ paySum + "€";
+      document.getElementById("discount").innerHTML = "Discount: -10%";
+
+    }
+    else if (sum>499){
+      var paySum = sum*0.8;
+      document.getElementById("total").innerHTML = "Total: "+ paySum + "€";
+      document.getElementById("discount").innerHTML = "Discount: -20%";
+
+    }
+
   }
 }

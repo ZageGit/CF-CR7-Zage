@@ -1,11 +1,12 @@
-<div class="media p-2 m-2"*ngFor="let blog of blogs">
-    <img src="{{blog.image}}" width="400" class="mr-3" alt="{{blog.headin}}">
+<div class="media p-2 m-2"*ngFor="let blog of blogs; index as blogId ">
+    <img src="{{blog.image}}" width="400" class="mr-3" alt="{{blog.heading}}">
     <div class="media-body">
       <h5 class="mt-0">{{blog.heading}}</h5>
         <p>{{blog.text}}</p>
            <div><blockquote class="blockquote text-center">
             <p>{{blog.quote}}</p>
             <p id="slogan">{{blog.author}} - {{blog.year}}</p> 
+            <button type="button" class="btn btn-primary" [routerLink]="['/blogs', blogId]" >Read more</button>
           </blockquote></div>
     </div>
   </div>
