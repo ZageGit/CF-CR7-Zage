@@ -1,0 +1,9 @@
+.navbar{
+    font-family: 'Caveat', cursive;
+    font-size: 1.8rem;
+    text-align: center;
+}
+li {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
