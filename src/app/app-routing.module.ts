@@ -5,6 +5,7 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { TravelPageComponent } from './travel-page/travel-page.component';
 import { TourDetailsComponent } from './tour-details/tour-details.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {
@@ -18,10 +19,13 @@ const routes: Routes = [
   },
   {
     path:"cart", component:CartPageComponent
-  },{
+  },
+  {
   path:'tours/:tourId', component:TourDetailsComponent
 },
-
+{
+  path: 'cartpage', component: CartPageComponent
+}
 
 ];
 

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { tours } from '../tours';
+import { CartService } from '../cart.service';
+import { ActivatedRoute } from '@angular/router';
+
+
 
 
 @Component({
@@ -10,7 +14,12 @@ import { tours } from '../tours';
 export class TravelPageComponent implements OnInit {
   tours=tours;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private cartService: CartService) { }
+  
+  addToCart(tour) {
+    window.alert('Your tour has been added to the cart!');
+    this.cartService.addToCart(tour);
+  }
 
   ngOnInit(): void {
   }
