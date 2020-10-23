@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { tours } from '../tours'
+import { CartService } from '../cart.service';
+
 
 
 @Component({
@@ -9,10 +11,13 @@ import { tours } from '../tours'
 })
 export class NavbarComponent implements OnInit {
   tours=tours;
+  numberOfItems;
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
   }
-
+ngDoCheck(){
+  this.numberOfItems = this.cartService.getLenght();
+}
 }

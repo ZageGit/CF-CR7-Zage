@@ -5,13 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class CartService {
   items = [];
+  sum:number;
 
   constructor() { }
   addToCart(tour) {
     this.items.push(tour);
-    console.log(this.items);
   }
- 
   getItems() {
     return this.items;
   }
@@ -22,5 +21,9 @@ export class CartService {
   }
   getLenght(){
     return this.items.length;
+  }
+
+  getTotal(){
+    return this.sum;
   }
 }

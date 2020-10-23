@@ -1,25 +1,16 @@
-<div class="container mt-5">
-  <blockquote class="blockquote text-center p-2">
-    <p class="mb-0">{{ tour.quote }}</p>
-    <footer class="blockquote-footer">
-      {{ tour.place }} <cite title="Source Title">{{ tour.date }}</cite
-      ><cite title="Source Title">{{ tour.time }}</cite>
-    </footer>
-  </blockquote>
+<div class="container">
   <div class="p-4">
     <div class="card mb-3">
-      <img class="card-img-top" height="600" src="{{ tour.image }}" alt="Card image cap" />
+      <img class="card-img-top" height="500" src="{{ tour.image }}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">{{ tour.heading }}</h5>
         <p class="card-text">{{ tour.text }}</p>
         <p class="card-text">
           <small class="text-muted"
-            >{{ tour.date }} - {{ tour.duration }}</small
-          >
+            >{{ tour.date }} - {{ tour.duration }}</small>
         </p>
       </div>
-      <a class="btn btn-success btn-lg" (click)="addToCart(tour)" role="button">Buy for only {{tour.price}} €</a>
-
+      <a class="btn btn-success btn-lg p-2" (click)="addToCart(tour)" role="button">Buy for only {{tour.price}} €</a>
     </div>
   </div>
 </div>
