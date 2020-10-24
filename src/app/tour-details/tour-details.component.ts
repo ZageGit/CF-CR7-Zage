@@ -14,6 +14,7 @@ export class TourDetailsComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private cartService: CartService) { }
 
+    // add to Cart function pushing chosen item into array items
   addToCart(tour) {
     window.alert('Your tour has been added to the cart!');
     this.cartService.addToCart(tour);

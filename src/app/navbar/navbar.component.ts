@@ -17,6 +17,8 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  // getting items.lenght and displaying it in the Navbar //
 ngDoCheck(){
   this.numberOfItems = this.cartService.getLenght();
 }

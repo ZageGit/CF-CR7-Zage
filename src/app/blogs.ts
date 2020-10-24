@@ -1,3 +1,5 @@
+//Create blogs //
+
 export const blogs = [
     {
       heading: 'Living in the Mountains.',

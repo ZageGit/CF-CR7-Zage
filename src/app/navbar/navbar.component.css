@@ -1,10 +1,10 @@
-.navbar{
-    font-family: 'Caveat', cursive;
-    font-size: 1.8rem;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
+.navbar {
+  font-family: "Caveat", cursive;
+  font-size: 1.8rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 li {
-    margin-right: 2rem;
-    margin-left: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }

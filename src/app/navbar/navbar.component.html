@@ -1,3 +1,4 @@
+<!-- Navbar incl all routerLinks-->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <button
     class="navbar-toggler"
@@ -17,20 +18,21 @@
           >Home <span class="sr-only">(current)</span></a
         >
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" routerLink="blog">Blog</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" routerLink="travel">Tours</a>
       </li>
 
-      <li class="nav-item">
+      <!-- Displaying numberOfItems-->
+      <li class="nav-item active">
         <a class="nav-link" routerLink="cart"
           >Cart: {{ numberOfItems }} items</a
         >
       </li>
 
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown active">
         <a
           class="nav-link dropdown-toggle"
           href="#"
@@ -40,8 +42,10 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Dropdown link
+          All Tours
         </a>
+
+        <!--looping through tours displaying anvbar link and routerLink to each tour in tour-details-->
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a
             class="dropdown-item"

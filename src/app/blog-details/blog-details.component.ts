@@ -10,13 +10,14 @@ import { blogs } from '../blogs'
 })
 export class BlogDetailsComponent implements OnInit {
   blog;
+  comment;
 
   constructor(private route: ActivatedRoute) { }
 
+  // on Init routiung //
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.blog = blogs[+params.get('blogId')];
        });
   }
-
 }
