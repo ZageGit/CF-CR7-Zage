@@ -1,6 +1,8 @@
 <div class="container mt-5">
-    <h1 class="display-4 mb-4">{{blog.heading}}</h1>
+    <div class="text-center">
+    <h1 class="display-4 mb-4 text-light">{{blog.heading}}</h1>
     <img src="{{blog.image}}" class="img-fluid" alt="{{blog.name}}">
+</div>
     </div>
     <div id="blogtext"class="container mt-2">
         <p class="text-justify p-4"> {{blog.text}}</p>
@@ -11,8 +13,9 @@
     <div>
         Comments:
     </div>
-    <textarea name="" id="" cols="150" rows="5"></textarea>
-    
+    <div class="form-group">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>    
     <button type="button" class="btn btn-primary mt-2">Comment</button>
     </div>
     </div>

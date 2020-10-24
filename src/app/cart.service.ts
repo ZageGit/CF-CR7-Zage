@@ -23,7 +23,7 @@ export class CartService {
     return this.items.length;
   }
 
-  getTotal(){
-    return this.sum;
-  }
+  // getTotal(){
+  //   return this.sum;
+  // }
 }
