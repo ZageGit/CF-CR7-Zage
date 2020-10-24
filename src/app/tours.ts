@@ -10,7 +10,7 @@ export const tours = [
     duration: '5 days',
     quote: 'The silence is incredible!',
     place: 'Apalachen',
-    price: 100,
+    price: 79,
   },
   {
     heading: 'Boattrip',
@@ -22,7 +22,7 @@ export const tours = [
     duration: '5 days',
     quote: 'The sunsets are awesome',
     place: 'Pacific ocean',
-    price: 100,
+    price: 59,
   },
   {
     heading: 'New York',
@@ -34,7 +34,8 @@ export const tours = [
     duration: '5 days',
     quote: 'Like in the movies!',
     place: 'New York',
-    price: 100,
+    price: 69,
+    sub:'(nice)'
   },
   {
     heading: 'Desert',
@@ -46,7 +47,7 @@ export const tours = [
     duration: '5 days',
     quote: 'Everybody loves them',
     place: 'Berlin',
-    price: 100,
+    price: 120,
   },
   {
     heading: 'Maledives',
@@ -58,7 +59,7 @@ export const tours = [
     duration: '5 days',
     quote: 'Sun and freedom',
     place: 'Maledivs',
-    price: 100,
+    price: 200,
   },
   {
     heading: 'Venice',
@@ -70,6 +71,6 @@ export const tours = [
     duration: '5 days',
     quote: 'I will never forget this',
     place: 'Venice',
-    price: 100,
+    price: 75,
   },
 ];

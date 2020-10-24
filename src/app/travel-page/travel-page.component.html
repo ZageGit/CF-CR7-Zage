@@ -8,7 +8,7 @@
     *ngFor="let tour of tours; index as tourId"
   >
     <h1 class="display-4">{{ tour.heading }}</h1>
-    <h4>now only {{ tour.price }} €</h4>
+    <h4>now only {{ tour.price }} € {{tour.sub}}</h4>
     <p class="lead">{{ tour.text }}</p>
     <hr class="my-4" />
     <p>{{ tour.quote }}</p>
