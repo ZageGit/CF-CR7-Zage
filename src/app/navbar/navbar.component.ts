@@ -1,25 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { tours } from '../tours'
+import { tours } from '../tours';
 import { CartService } from '../cart.service';
-
-
 
 @Component({
   selector: 'navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  tours=tours;
+  tours = tours;
   numberOfItems;
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   // getting items.lenght and displaying it in the Navbar //
-ngDoCheck(){
-  this.numberOfItems = this.cartService.getLenght();
-}
+  ngDoCheck() {
+    this.numberOfItems = this.cartService.getLenght();
+  }
 }

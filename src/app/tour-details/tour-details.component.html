@@ -1,18 +1,28 @@
-
 <!-- Displaying chosen tour on tour-details-->
 <div class="container">
   <div class="p-4">
     <div class="card mb-3">
-      <img class="card-img-top" height="500" src="{{ tour.image }}" alt="Card image cap" />
+      <img
+        class="card-img-top"
+        height="500"
+        src="{{ tour.image }}"
+        alt="Card image cap"
+      />
       <div class="card-body">
         <h5 class="card-title">{{ tour.heading }}</h5>
         <p class="card-text">{{ tour.text }}</p>
         <p class="card-text">
           <small class="text-muted"
-            >{{ tour.date }} - {{ tour.duration }}</small>
+            >{{ tour.date }} - {{ tour.duration }}</small
+          >
         </p>
       </div>
-      <a class="btn btn-success btn-lg p-2" (click)="addToCart(tour)" role="button">Buy for only {{tour.price}} €</a>
+      <a
+        class="btn btn-success btn-lg p-2"
+        (click)="addToCart(tour)"
+        role="button"
+        >Buy for only {{ tour.price }} €</a
+      >
     </div>
   </div>
 </div>

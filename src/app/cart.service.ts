@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CartService {
   items = [];
-  sum:number;
+  sum: number;
 
-  constructor() { }
+  constructor() {}
   // add to Cart function pushing chosen item into array items
   addToCart(tour) {
     this.items.push(tour);
@@ -16,15 +16,14 @@ export class CartService {
     return this.items;
   }
 
-   // Clear cart function for clearing array items
+  // Clear cart function for clearing array items
   clearCart() {
     this.items = [];
     return this.items;
   }
 
-     // getLenght function to get lenght of array items, to display numbeOfItems in Navbar
-  getLenght(){
+  // getLenght function to get lenght of array items, to display numbeOfItems in Navbar
+  getLenght() {
     return this.items.length;
   }
-
 }

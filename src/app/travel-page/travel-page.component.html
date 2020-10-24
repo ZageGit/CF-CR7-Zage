@@ -1,16 +1,27 @@
-
+<!--Container for all travelcards-->
 <div class="container">
+  <!--loop for displaying each tourcard and providing index as tourId to link and display all tours seperately-->
 
-<div style="background-image: url({{tour.image}})"class="jumbotron shadow-sm" *ngFor="let tour of tours ; index as tourId">
-  <h1 class="display-4">  {{tour.heading}}</h1>
-  <h4>now only {{tour.price}} €</h4>
-  <p class="lead">{{tour.text}}</p>
-  <hr class="my-4">
-  <p>{{tour.quote}}</p>
-  <div class="d-flex justify-content-around">
-  <a class="btn btn-primary btn-lg" [routerLink]="['/tours', tourId]" role="button">More Info</a>
-  <a class="btn btn-success btn-lg" (click)="addToCart(tour)" role="button">Buy</a>
-</div>
-
-</div>
+  <div
+    style="background-image: url({{ tour.image }})"
+    class="jumbotron shadow-sm"
+    *ngFor="let tour of tours; index as tourId"
+  >
+    <h1 class="display-4">{{ tour.heading }}</h1>
+    <h4>now only {{ tour.price }} €</h4>
+    <p class="lead">{{ tour.text }}</p>
+    <hr class="my-4" />
+    <p>{{ tour.quote }}</p>
+    <div class="d-flex justify-content-around">
+      <a
+        class="btn btn-primary btn-lg"
+        [routerLink]="['/tours', tourId]"
+        role="button"
+        >More Info</a
+      >
+      <a class="btn btn-success btn-lg" (click)="addToCart(tour)" role="button"
+        >Buy</a
+      >
+    </div>
+  </div>
 </div>

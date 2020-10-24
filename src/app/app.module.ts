@@ -11,9 +11,6 @@ import { TourDetailsComponent } from './tour-details/tour-details.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,14 +21,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     TravelPageComponent,
     TourDetailsComponent,
     BlogDetailsComponent,
-   
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

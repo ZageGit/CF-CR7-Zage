@@ -1,27 +1,23 @@
 <!-- Container for displaying blog-details  -->
 
 <div class="container mt-5">
-    <div class="text-center">
-    <h1 class="display-4 mb-4 text-light">{{blog.heading}}</h1>
-    <img src="{{blog.image}}" class="img-fluid" alt="{{blog.name}}">
+  <div class="text-center">
+    <h1 class="display-4 mb-4 text-light">{{ blog.heading }}</h1>
+    <img src="{{ blog.image }}" class="img-fluid" alt="{{ blog.name }}" />
+  </div>
 </div>
-    </div>
-    <div id="blogtext"class="container mt-2">
-        <p class="text-justify p-4"> {{blog.text}}</p>
-        <blockquote class="blockquote text-center">
-            <p class="mb-0">{{blog.quote}}</p>
-          </blockquote>
-    <div class="p-4">
-    <div>
-        Comments:
-    </div>
+<div id="blogtext" class="container mt-2">
+  <p class="text-justify p-4">{{ blog.text }}</p>
+  <blockquote class="blockquote text-center">
+    <p class="mb-0">{{ blog.quote }}</p>
+  </blockquote>
+  <div class="p-4">
+    <div>Comments:</div>
     <!-- text area does nothing - i wanted to make it work but no time :( -->
 
     <div class="form-group">
-        <textarea class="form-control" id="textArea" rows="3" ></textarea>
-      </div>    
+      <textarea class="form-control" id="textArea" rows="3"></textarea>
+    </div>
     <button type="submit" class="btn btn-primary mt-2">Comment</button>
-    </div>
-    </div>
-    
-    
+  </div>
+</div>

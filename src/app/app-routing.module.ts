@@ -7,36 +7,40 @@ import { TravelPageComponent } from './travel-page/travel-page.component';
 import { TourDetailsComponent } from './tour-details/tour-details.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 
-
-
 const routes: Routes = [
   {
-    path:"", component:HomePageComponent
+    path: '',
+    component: HomePageComponent,
   },
   {
-    path:"blog", component:BlogPageComponent
+    path: 'blog',
+    component: BlogPageComponent,
   },
   {
-    path:"travel", component:TravelPageComponent
+    path: 'travel',
+    component: TravelPageComponent,
   },
   {
-    path:"cart", component:CartPageComponent
+    path: 'cart',
+    component: CartPageComponent,
   },
   {
-  path:'tours/:tourId', component:TourDetailsComponent
-},
-{
-  path:'blogs/:blogId', component:BlogDetailsComponent
-},
+    path: 'tours/:tourId',
+    component: TourDetailsComponent,
+  },
+  {
+    path: 'blogs/:blogId',
+    component: BlogDetailsComponent,
+  },
 
-{
-  path: 'cartpage', component: CartPageComponent
-},
-
+  {
+    path: 'cartpage',
+    component: CartPageComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

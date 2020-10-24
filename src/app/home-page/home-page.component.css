@@ -1,16 +1,16 @@
 .jumbotron {
-    text-shadow: 1px 1px #C0C0C0;
-    background-color: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px #c0c0c0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .carousel {
-    width:640px;
-    height:360px;
-  }
-  .blockquote{
-      background-color: rgba(255, 255, 255, 0.6);
-  }
-  #slogan {
-    font-size: 1rem;
-    font-style: italic;
-    color:grey;
+  width: 640px;
+  height: 360px;
+}
+.blockquote {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+#slogan {
+  font-size: 1rem;
+  font-style: italic;
+  color: grey;
 }

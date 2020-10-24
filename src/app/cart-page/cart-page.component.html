@@ -1,10 +1,12 @@
 <!--main Container-->
 <div class="container">
   <h3>Your Cart</h3>
-  <h4 id="total"></h4> <!--h4 for displaying total amount -->
-  <h4 id="discount"></h4> <!--h4 for displaying discount -->
+  <h4 id="total"></h4>
+  <!--h4 for displaying total amount -->
+  <h4 id="discount"></h4>
+  <!--h4 for displaying discount -->
 
-<!--formGroup starts here -->
+  <!--formGroup starts here -->
   <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
     <div class="row">
       <div class="col">
@@ -28,9 +30,8 @@
     </div>
     <button type="submit" class="btn btn-success mt-2 mb-2">Purchase</button>
   </form>
-<!-- Container for displaying items Array  -->
+  <!-- Container for displaying items Array  -->
   <div class="container row">
-
     <!-- loop for all items in array  -->
     <div class="card col-3 m-2" style="width: 18rem" *ngFor="let item of items">
       <img
