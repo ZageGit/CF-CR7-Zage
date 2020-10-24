@@ -7,9 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { TravelPageComponent } from './travel-page/travel-page.component';
-import { FooterComponent } from './footer/footer.component';
 import { TourDetailsComponent } from './tour-details/tour-details.component';
-import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -24,9 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BlogPageComponent,
     CartPageComponent,
     TravelPageComponent,
-    FooterComponent,
     TourDetailsComponent,
-    AboutUsComponent,
     BlogDetailsComponent,
    
   ],
