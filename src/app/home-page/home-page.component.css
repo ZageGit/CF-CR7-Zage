@@ -1,6 +1,6 @@
 .jumbotron {
-    background-color: transparent !important;
     text-shadow: 1px 1px #C0C0C0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .carousel {
     width:640px;

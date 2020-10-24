@@ -48,8 +48,6 @@ export class CartPageComponent implements  DoCheck {
 
     }
     
-    
-    
   } 
   onSubmit(customerData) {
     console.warn('Your order has been submitted', customerData);
