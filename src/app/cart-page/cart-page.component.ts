@@ -1,6 +1,6 @@
-import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
-
+import { FormBuilder } from '@angular/forms';
 
 
 @Component({
@@ -8,17 +8,24 @@ import { CartService } from '../cart.service';
   templateUrl: './cart-page.component.html',
   styleUrls: ['./cart-page.component.css']
 })
-export class CartPageComponent implements OnInit {
+export class CartPageComponent implements  DoCheck {
   items;
   checkoutForm;
   sum; 
   paySum;
 
-  constructor(private cartService: CartService) { 
-    this.items=this.cartService.getItems();
+
+  constructor(private cartService: CartService, private formBuilder: FormBuilder) { 
+    
+    this.checkoutForm = this.formBuilder.group({
+      name: '',
+      address: ''
+    });
   }
 
-  ngOnInit(): void {
+  ngDoCheck() {
+    this.items=this.cartService.getItems();
+
     console.log(this.items);
     var sum = 0;
     this.items.forEach(function(tour){sum = sum+tour.price});
@@ -44,4 +51,13 @@ export class CartPageComponent implements OnInit {
     
     
   } 
+  onSubmit(customerData) {
+    console.warn('Your order has been submitted', customerData);
+    window.alert('Thank you for your purchase!');
+    this.items = this.cartService.clearCart();
+    this.checkoutForm.reset();
+    document.getElementById("discount").innerHTML = "";
+
+
+  }
 }

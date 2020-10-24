@@ -1,10 +1,47 @@
-
 <h3>Your Cart</h3>
 <h4 id="total"></h4>
 <h4 id="discount"></h4>
 
+<!-- <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+ 
+  <div>
+    <label for="address">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+ 
+  <button class="button" type="submit">Purchase</button>
+ 
+ </form> -->
+
+ <form  [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <div class="row">
+    <div class="col">
+      <input type="text"  class="form-control" placeholder="Name" id="name"  formControlName="name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Address" id="address" formControlName="address">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-success mt-2 mb-2">Purchase</button>
+
+</form>
+
+
+
+
+
+
 <div  class="container row">
-<div class="card col-3" style="width: 18rem;"*ngFor="let item of items">
+<div class="card col-3 m-2" style="width: 18rem;"*ngFor="let item of items">
     <img class="card-img-top mt-2" src="{{item.image}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{item.heading}}</h5>
@@ -17,3 +54,5 @@
     </ul>
   </div>
 </div>
+
+
